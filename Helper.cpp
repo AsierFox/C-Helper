@@ -15,3 +15,12 @@ void gotoxy (int x, int y) {
 void setColor (int color) {
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), color);
 }
+
+/////////////////////////////////////////////////////////////////////////
+//////////////////       Number Methods         /////////////////////////
+/////////////////////////////////////////////////////////////////////////
+
+int generateRandom(int max_num, int min_num = 0) {
+    // Initialize to seed this method before execute -> srand(time(NULL));
+    return rand() % (++max_num - min_num) + min_num;
+}
