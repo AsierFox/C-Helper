@@ -7,7 +7,7 @@
 void gotoxy (int x, int y) {
     COORD c;
     c.X = x;
-    x.Y = y;
+    c.Y = y;
     SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), c);
 }
 
